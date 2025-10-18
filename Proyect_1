@@ -27,4 +27,11 @@ UNIQUE (id_products),
 foreign key (id_clients) REFERENCES clients (id_clients)
 );
 
+After this one colum was missing, I forget to add it at the beggining in my table clients, so after this I used the next query to add it correctly:
 
+ALTER TABLE clients ADD column age int;
+
+So after this, is the turn to add all the values, an example in the table clients is:
+
+INSERT INTO clients (
+name, surname, age, email, quota) VALUES ( "Javier", "Gonzalez", "25", "Jgonzalez@gmail.com", "Premium");
