@@ -36,6 +36,7 @@ Through this project I learned how to:
 ## Author
 
 Javier González Ballesteros
+
 Linkedin Profile: www.linkedin.com/in/javierglezballesteros
 
 
