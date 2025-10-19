@@ -36,7 +36,7 @@ Through this project I learned how to:
 ## Author
 
 Javier González Ballesteros
-Data Analyst | Business Intelligence & Process Automation
-LinkedIn Profile
+Linkedin Profile: www.linkedin.com/in/javierglezballesteros
 
-GitHub Profile
+
+
