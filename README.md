@@ -42,6 +42,7 @@ At first, I forgot to add the column age to the clients table, so I used this qu
 
 sql
 ALTER TABLE clients ADD COLUMN age INT;
+
 Step 4 – Insert data
 Example insert into the clients table:
 
