@@ -1,0 +1,32 @@
+Hello everyone!
+
+Today I wanted to challenge myself a bit more with some SQL exercises that are slightly more advanced.
+To do that, I asked ChatGPT to give me a couple of examples to practice with.
+
+Exercise 1
+Show the products whose price is higher than the average price of all products.
+
+SELECT product, price
+FROM products
+WHERE price > (SELECT AVG(price) FROM products);
+
+
+Exercise 2
+(Being honest, this one was really hard for me to figure out — so far, the most difficult query I’ve done!)
+
+Show how many clients there are by quota type and by age range:
+
+- Under 25 years old
+- Between 25 and 40 years old
+- Over 40 years old
+
+SELECT quota,
+COUNT(*) AS total_clients,
+CASE
+    WHEN age < 25 THEN 'Under 25 years old'
+    WHEN age > 25 AND age < 40 THEN 'Between 25 and 40 years old'
+    WHEN age > 40 THEN 'Over 40 years old'
+    ELSE 'Unknown'
+END AS age_client
+FROM clients
+GROUP BY quota, age_client;
